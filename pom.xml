@@ -18,12 +18,13 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
   
-<distributionManagement>
-  <repository>
-    <id>publish-java-package-with-maven-on-github-packages</id>
-    <name>suchandra12</name>
-    <url>https://maven.pkg.github.com/suchandra12/publish-java-package-with-maven-on-github-packages.git</url>
-  </repository>
+ <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/devopshint/publish-java-package-with-maven-on-github-packages</url>
+    </repository>
+  </distributionManagement>
 </distributionManagement>
 
 
