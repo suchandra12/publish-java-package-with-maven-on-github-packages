@@ -12,12 +12,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - uses: s4u/maven-settings-action@v2.8.0
-        with:
-          servers: '[{"id": "github", "username": "suchandra12", "password": "&#103;&#104;&#112;&#95;&#80;&#115;&#114;&#104;&#85;&#54;&#82;&#99;&#97;&#121;&#76;&#115;&#68;&#48;&#55;&#75;&#103;&#112;&#105;&#97;&#56;&#73;&#110;&#70;&#112;&#49;&#88;&#75;&#71;&#78;&#50;&#110;&#101;&#100;&#54;&#100;"}]'
-          
       - name: Publish package
         run: mvn --batch-mode deploy
         env:
-         GITHUB_USERNAME: x-access-token
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         repo-token: ${{ secrets.GITHUB_TOKEN }}
