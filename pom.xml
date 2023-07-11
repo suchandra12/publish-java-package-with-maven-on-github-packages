@@ -25,6 +25,15 @@
       <url>https://maven.pkg.github.com/devopshint/publish-java-package-with-maven-on-github-packages</url>
     </repository>
   </distributionManagement>
+
+  <servers>
+    <server>
+        <id>publish-java-package-with-maven-on-github-packages</id>
+        <username>suchandra12</username>
+        <password>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</password>
+    </server>
+</servers>
+
  
 
 
