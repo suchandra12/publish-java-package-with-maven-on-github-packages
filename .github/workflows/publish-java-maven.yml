@@ -13,6 +13,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Publish package
-        run: mvn -X --batch-mode deploy
+        run: mvn -X -Dmaven.resolver.transport=wagon --batch-mode deploy
         env:
          repo-token: ${{ secrets.GITHUB_TOKEN }}
