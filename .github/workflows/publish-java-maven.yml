@@ -14,7 +14,7 @@ jobs:
           distribution: 'adopt'
       - uses: s4u/maven-settings-action@v2.8.0
         with:
-          servers: '[{"id": "github", "username": "JAVA_TOKEN", "password": "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"}]'
+          servers: '[{"id": "github", "username": "suchandra12", "password": "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"}]'
           
       - name: Publish package
         run: mvn -X -Dmaven.resolver.transport=wagon --batch-mode deploy
