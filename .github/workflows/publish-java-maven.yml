@@ -17,6 +17,6 @@ jobs:
           servers: '[{"id": "github", "username": "suchandra12", "password": "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"}]'
           
       - name: Publish package
-        run: mvn -X -Dmaven.resolver.transport=wagon --batch-mode deploy
+        run: mvn --batch-mode deploy
         env:
-         repo-token: ${{ secrets.GITHUB_TOKEN }}
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
